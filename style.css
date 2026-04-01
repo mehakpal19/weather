@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar{
+    display : flex;
+    justify-content: space-between;
+    background: #b3b3b3;
+    padding: 6px;
+}
+
+input{
+    padding: 5px;
+  border: 2px solid #757575;
+  border-radius: 5px;
+  position: relative;
+}
+
+span{
+    position: absolute;
+  right: 4%;
+  top: 0%;
+}
+
+span svg{
+    padding-top:2px;
+}
+
+label{
+    border: 2px solid black;
+  border-radius: 5px;
+  padding: 4px;
+  cursor : pointer;
+}
+
+ul{
+    display : flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+ul li{
+     list-style-type: none;
+}
+
+ul li a{
+   
+    font-weight: bold;
+    text-decoration: none;
+    color : black;
+}
+
+li a:hover{
+     cursor : pointer;
+     text-decoration: underline;
+}
+
+h2,h3{
+    text-align: center;
+    margin: 5px 0px;
+    margin: 11px 0px;
+}
+
+.card{
+    display: flex;
+  justify-content: space-evenly;
+  margin: 14px;
+}
+
+.temperature,.humidity,.wind{
+height: 227px;
+  width: 373px;
+  border-radius: 10px;
+  background: #4bb0f9;
+  position : relative;
+}
+
+.temperature svg{
+    position: absolute;
+  left: 65%;
+  top: 5%;
+}
+
+.temperature h2{
+    position : relative;
+}
+
+.temperature img{
+    width: 105px;
+  position: absolute;
+  top: 27%;
+  left: 2%;
+}
+
+.humidity svg{
+    position: absolute;
+  left: 68%;
+  top: 5%;
+}
+
+.wind svg{
+    position: absolute;
+  left: 63%;
+  top: 5%;
+}
+
+.weather-box button{
+    width: 96%;
+  padding: 6px;
+  position: absolute;
+bottom: 8px;
+  left: 7px;
+  background: white;
+  border: none;
+}
+
+.box{
+background: white;
+  margin: 0px 10px;
+}
+
+.box p{
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+button:hover{
+    cursor : pointer;
+    border : 2px solid black;
+    font-weight: bold;
+    background-color: black;
+    color : white;
+    font-size : 14px;
+}
+
+.tabular {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.tabular h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.weather-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.weather-table th {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.weather-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.weather-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.weather-table tr:hover {
+    background-color: #e6f2ff;
+    transition: 0.3s;
+}
+
+@media (max-width:976px) {
+    .card{
+        flex-direction: column;
+        align-items: center;
+        gap : 15px;
+    }
+    .weather-table{
+        overflow-x: scroll;
+    }
+}

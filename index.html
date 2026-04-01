@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav">
+            <ul>
+                <li style="font-weight: bold;">WEATHER APP</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tab/about.html" target="_blank">About the App</a></li>
+                <li><a href="tab/usage.html" target="_blank">Usage Guide</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search" id="srch"><span id="clear">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="40" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 8L11 11M11 11L14 14M11 11L14 8M11 11L8 14" />
+</svg>
+            </span>
+             <button type="submit" id="srch">Search</button>
+        </div>
+    </div>
+    <div class="weather-box">
+        <h2>Weather for City</h2>
+        <div class="card">
+            <div class="temperature">
+                <h3>Temperature</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M12 22C14.7614 22 17 19.7614 17 17C17 15.3644 16.2147 13.9122 15.0005 13V5.00049C15.0005 4.06815 15.0005 3.60198 14.8481 3.23428C14.6451 2.74451 14.256 2.35537 13.7662 2.15239C13.3985 2 12.9323 2 12 2C11.0677 2 10.6015 2 10.2338 2.15239C9.74402 2.35537 9.35488 2.74451 9.1519 3.23428C8.99951 3.60198 8.99951 4.06815 8.99951 5.00049V13C7.78534 13.9122 7 15.3644 7 17C7 19.7614 9.23858 22 12 22Z" />
+    <path d="M12 15C10.8954 15 10 15.8954 10 17C10 18.1046 10.8954 19 12 19C13.1046 19 14 18.1046 14 17C14 15.8954 13.1046 15 12 15ZM12 15V8" />
+</svg>
+                    <div class="box">
+                    <h2>&deg;C</h2>
+                        <img src="" alt="">
+                        <p>Temperature is </p>
+                     <p>MinTemperature is </p>
+                      <p>Max Temperature is </p>
+                        <button onclick="alert('Sign up feature coming soon!')">Sign up for free</button>
+                </div>
+            </div>
+            <div class="humidity">
+                <h3>Humidity Info</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5">
+    <path d="M3.5 13.678C3.5 9.49387 7.08079 5.35907 9.59413 2.97222C10.9591 1.67593 13.0409 1.67593 14.4059 2.97222C16.9192 5.35907 20.5 9.49387 20.5 13.678C20.5 17.7804 17.2812 22 12 22C6.71878 22 3.5 17.7804 3.5 13.678Z" />
+    <path d="M4 12.284C5.46463 11.8303 8.39159 11.6836 11.9842 13.7016C15.57 15.7157 18.516 14.9984 20 14.1354" />
+</svg>
+                <div class="box">
+                    <h2>%</h2>
+                    <p>Wind Degree is </p>
+                     <p>Feels Like </p>
+                      <p>Humidity is </p>
+                </div>
+                <div class="btn">
+                        <button onclick="alert('Start by searching for a city.')">Get Started</button>
+                      </div>
+            </div>
+            <div class="wind">
+                <h3>Wind Info</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+    <path d="M14.1588 21.4146C14.3031 21.4699 14.4585 21.5 14.6203 21.5C15.385 21.5 16.0049 20.8284 16.0049 20C16.0049 19.1716 15.385 18.5 14.6203 18.5C14.3488 18.5 14.0956 18.5846 13.8819 18.7309C12.8207 19.5225 10.8549 20.5378 8.62023 20.801M5.85102 20.6936C5.2328 20.5635 4.61355 20.3541 4.00488 20.0478" />
+    <path d="M19.0049 20.5C19.263 20.5 19.9606 20.5 21.0049 20.5" />
+    <path d="M17.4782 8.40196C17.4856 8.40192 17.4931 8.40191 17.5006 8.40191C19.9849 8.40191 21.8964 10.36 21.9983 12.6502C22.0763 15.7 19.4254 17.308 17.5062 17.248M17.4782 8.40196C17.493 8.24557 17.5006 8.08719 17.5006 7.92713C17.5006 4.96 15.0368 2.5 12.0005 2.5C9.06174 2.5 6.74504 4.77718 6.50324 7.44927M17.4782 8.40196C17.376 9.47916 17.0384 10.42 16.2347 11.356M6.50324 7.44927C3.96786 7.67846 2.12265 9.76 2.0027 12.1754C1.92473 14.5 3.54406 16.12 5.52323 16.9C9.18169 18.28 12.6602 17.104 13.8237 15.124C14.3155 14.104 13.7398 12.64 12.3604 12.37C11.5207 12.16 10.0813 12.7 9.99735 14.302M6.50324 7.44927C6.66101 7.43501 6.82091 7.42771 6.98262 7.42771C8.10796 7.42771 9.12172 7.72 10.0093 8.404" />
+</svg>
+                <div class="box">
+                    <h2>km/hr</h2>
+                    <p>Wind Speed is </p>
+                     <p>Sunrise Time is </p>
+                      <p>Sunset Time is </p>
+                </div>
+                <div class="btn">
+                        <button onclick="alert('Contact feature coming soon!')">Contact Us</button>
+                      </div>
+            </div>
+        </div>
+    </div>
+   <div class="tabular">
+    <h2>Weather of other common places</h2>
+
+    <table class="weather-table">
+        <thead>
+            <tr>
+                <th>Cities</th>
+                <th>Cloud_pct</th>
+                <th>Feels_like</th>
+                <th>Humidity</th>
+                <th>Temp</th>
+                <th>Dew_point</th>
+                <th>Precipitaton_in</th>
+                <th>Heat_index</th>
+                <th>Wind_speed</th>
+                <th>Wind_degrees</th>
+                <th>Wind_chill</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
